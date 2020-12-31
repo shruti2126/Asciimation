@@ -1,0 +1,61 @@
+/*Name: Shruti Sharma
+Section: CSE 154 AG
+
+This is the CSS stylesheet for ascii.html.
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: #9999FF;
+}
+
+h1 {
+  font-family: font-family: 'Roboto', sans-serif, monospace;
+  font-weight: bold;
+  font-size: 32pt;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*div*/, h1{
+  text-align: center;
+}
+
+textarea {
+  width: 90%;
+  height: 400px;
+  font-weight: bold;
+}
+
+textarea, fieldset {
+  font-size: 12pt;
+}
+
+fieldset {
+  border: 5px black solid;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+#fieldsets {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+legend {
+  text-align: left;
+  font-size: 14pt;
+}
+
+footer {
+  position: fixed;
+  right: 23px; /* This was supposed to be 5px, but to match appearance
+  of example given in the specification, I had to use 23px */
+  bottom: 27px; /* I did a similar alteration here as well */
+  width: 70px;
+  display: block;
+}

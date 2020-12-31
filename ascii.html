@@ -1,0 +1,88 @@
+<!--Name: Shruti Sharma
+Section: CSE 154 AG
+
+This webpage enables users to view ASCII art animations, or "ASCIImations" by
+interacting with the page. Users can also add their own texts in the text area
+to be played along with animation.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ASCImation </title>
+    <link href="ascii.css" type="text/css" rel="stylesheet"/>
+    <script src="https://webster.cs.washington.edu/js/asciimation/animations.js
+    " type="text/javascript" rel="javascript"> </script>
+    <script src="custom-animation.js" type="text/javascript"> </script>
+    <script src="ascii.js" type="text/javascript" rel="javascript"> </script>
+  </head>
+
+  <body>
+    <header>
+      <h1> ASCIImation </h1>
+    </header>
+
+    <main>
+      <!-- Used div here just to be able to align textarea to center -->
+      <div>
+        <textarea rows="80" cols="20" id="mytextarea"></textarea>
+      </div>
+
+      <section id="fieldsets">
+        <fieldset>
+          <legend>Play Controls</legend>
+          <button id="start"> Start </button>
+          <button id="stop"> Stop </button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Animation</legend>
+          <select id="animation">
+            <option value="Blank"></option>
+            <option value="Exercise" >Exercise</option>
+            <option value="Juggler" >Juggler</option>
+            <option value-"Bike">Bike</option>
+            <option value="Dive">Dive</option>
+            <option value="Ducks">Ducks</option>
+            <option value="Pony">Pony</option>
+            <option value="custom">DancingMan</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Size</legend>
+          <select id="size">
+            <option value="7">Tiny</option>
+            <option value="10">Small</option>
+            <option value="12"
+            selected="selected">Medium</option>
+            <option value="16">Large</option>
+            <option value="24">Extra large</option>
+            <option value="32">XXL</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Speed</legend>
+          <label><input type="radio" name="speed" value="50"> Turbo </label>
+          <label><input type="radio" name="speed" value="250"
+            checked="checked"> Normal </label>
+          <label><input type="radio" name="speed" value="1500"> Slo-mo </label>
+        </fieldset>
+        <section>
+
+        <footer>
+          <a href="https://validator.w3.org/#validate_by_input"><img
+            src="https://webster.cs.washington.edu/images/w3c-html-blue.png"
+            alt="W3C HTML VALIDATOR"/></a>
+          <a href="https://jigsaw.w3.org/css-validator/#validate_by_input"><img
+            src="https://webster.cs.washington.edu/images/w3c-css-blue.png"
+            alt="W3C CSS VAIDATOR" /></a>
+          <a
+          href="https://courses.cs.washington.edu/courses/cse154/17au/jslint/jsl
+          int.html"><img
+          src="https://webster.cs.washington.edu/images/w3c-js-blue.png"
+          alt="W3C JS VALIDATOR" /></a>
+        </footer>
+      </main>
+   </body>
+</html>
